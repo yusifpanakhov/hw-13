@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:#14171F;
+}
+body{
+    background-color: var(--main-color);
+    font-family: "Poppins", sans-serif;;
+}
+header{
+    border-bottom: 1px solid rgba(170, 170, 170, 0.16);
+    margin-bottom: 150px;
+}
+.logo{
+    padding: 34px 120px;
+    margin-top: 10px;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    position: relative;
+    top: -58px;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: end;
+    color: white;
+    position: relative;
+    top: -69px;
+    margin-right: 120px;
+}
+.button2{
+    background-color: #7C5CFC;
+    border-radius: 30px;
+    padding: 15px 20px;
+    position: relative;
+    top: -15px;
+}
+
+.content{
+    color: white;
+    text-align-last:center;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.description{
+    color: white;
+    text-align-last: center;
+    font-size: 15px;
+    opacity: 0.5;
+    margin-bottom: 40px;
+}
+.main-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    gap: 24px;
+}
+.button3{
+    background-color: #7C5CFC;
+    border-radius: 30px;
+    padding: 15px 20px;
+}
+.button4{
+    position: relative;
+    top: -1px;
+    background-color: #292D32;
+    border-radius: 30px;
+    padding: 15px 20px;
+}
+.dashboard{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.elipse1{
+    position: absolute;
+    top: -1px;
+    right: 1px;
+}
+.elipse2{
+    position: absolute;
+    bottom: -120px;
+    left: 1px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav{
+    display: none;
+  }
+  .header-buttons{
+    display: none;
+  }
+  .logo{
+    position: relative;
+    left: -80px;
+  }
+  .elipse1{
+    position: absolute;
+    right: -220px;
+  }
+  .content{
+    text-align: left;
+    text-align-last: left;
+    margin-left: 30px;
+  }
+  .description{
+    margin-left: 30px;
+    text-align: left;
+    text-align-last: left;
+  }
+  .main-buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+    left: 20px;
+  }
+  .elipse2{
+    position: relative;
+    bottom: 350px;
+  }
+  .dashboard{
+    height: 110px;
+    width: 10px;
+    margin-left: 30px;
+    position: relative;
+    left: 225px;
+    bottom: -100px;
+  }
+  }
